@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Class */
+.linear-bg {
+    background: linear-gradient(269.82deg, #07091c00 0.17%, #080a1ad6 99.8%);
+}
+
+.hoveres {
+    @apply hidden;
+}
+
+.hovered:hover .hoveres {
+    @apply flex-colo;
+}
+
+.flex-colo {
+    @apply flex flex-col justify-center items-center;
+}
+
+.flex-rows {
+    @apply flex flex-row justify-center items-center;
+}
+
+.flex-btn {
+    @apply flex justify-between items-center;
+}
+
+.transitions {
+    @apply transition duration-300 ease-in;
+}
+
+.zIndex {
+    z-index: 1000;
+}
+
+@keyframes expandAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-expand {
+    animation: expandAnimation 1.5s ease-in-out infinite;
+}
+
+.customInput,
+.customInput input {
+    border-color: #080A1A;
+    height: 3rem;
+    background-color: #080A1A;
+    color: #4B5563;
+    font-weight: 600;
+}
+
+.customInput::placeholder,
+.customInput input::placeholder {
+    color: #4B5563;
+    font-weight: 700;
+}
+
+.customInput:hover,
+.customInput input:hover {
+    border-color: #080A1A !important;
+    background-color: #080A1A;
+}
+
+.customInput:focus,
+.customInput input:focus {
+    border-color: #080A1A !important;
+    background-color: #080A1A;
+}
+
+.ant-spin-dot {
+    color: #F20000 !important;
+}
+
+.ant-pagination-item-link {
+    background-color: #F20000 !important;
+    color: white !important;
+}
+
+.ant-pagination-item-active {
+    background-color: #F20000 !important;
+    border: white !important;
+}
+
+.ant-pagination-item a {
+    color: #F20000 !important;
+}
+
+.ant-pagination-item-active a {
+    color: white !important;
+}
+
+
+.ant-pagination-item:hover {
+    background-color: #F20000 !important;
+}
+
+.ant-pagination-item:hover a {
+    color: white !important;
+}
